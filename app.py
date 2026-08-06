@@ -6,6 +6,7 @@ from models.cleaner import clean_text
 from models.skill_extractor import extract_skills
 from models.matcher import calculate_match
 from models.ai_matcher import calculate_similarity
+from models.recommendation import generate_recommendation
 
 app = Flask(__name__)
 
@@ -77,13 +78,16 @@ def analyze():
     cleaned_text,
     job_description
     )
-
+    recommendation = generate_recommendation(
+    result["missing"]
+    )
     return render_template(
         "result.html",
         score=result["score"],
         ai_score=ai_score,
         matched=result["matched"],
-        missing=result["missing"]
+        missing=result["missing"],
+        recommendation=recommendation
     )
 
 
