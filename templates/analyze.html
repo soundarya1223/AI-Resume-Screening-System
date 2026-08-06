@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>
+Analyze Resume
+</title>
+
+<link rel="stylesheet" href="/static/css/style.css">
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+<h1>
+AI Resume Analysis
+</h1>
+
+
+<p>
+Enter the required skills for the job role.
+</p>
+
+
+<form action="/analyze" method="POST">
+
+
+<textarea
+name="job_description"
+rows="8"
+cols="50"
+placeholder="Example:
+Java
+Python
+SQL
+Machine Learning"
+required></textarea>
+
+
+<br><br>
+
+
+<button type="submit">
+Analyze Resume
+</button>
+
+
+</form>
+
+
+</div>
+
+</body>
+
+</html>
