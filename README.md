@@ -2,51 +2,43 @@
 
 ## Overview
 
-AI Resume Screening System is a web-based application that analyzes resumes and matches candidate skills with job requirements.
+AI Resume Screening System is a web-based application that automates resume analysis and candidate evaluation.
 
-The system extracts resume information, identifies technical skills, compares them with job requirements, and generates a matching score.
+The system extracts information from uploaded resumes, identifies technical skills, compares them with job requirements, and generates a matching score to help recruiters shortlist candidates efficiently.
+
+---
 
 ## Features
 
 - Resume PDF upload
-- Resume text extraction
-- Text preprocessing
-- Skill extraction
+- Automatic resume text extraction
+- Resume text preprocessing
+- Technical skill identification
 - Job requirement analysis
-- Resume-job matching score
+- Resume and job matching score
 - Missing skill identification
+- User-friendly web interface
+
+---
 
 ## Technologies Used
 
-Frontend:
-- HTML
-- CSS
-
-Backend:
+### Backend
 - Python
 - Flask
 
-Libraries:
+### Frontend
+- HTML
+- CSS
+
+### Libraries
 - pypdf
 
-## Project Workflow
+### Development Tools
+- VS Code
+- Git
+- GitHub
 
-Resume Upload
-↓
-PDF Text Extraction
-↓
-Text Cleaning
-↓
-Skill Extraction
-↓
-Job Skill Matching
-↓
-Match Score Generation
+---
 
-## How to Run
-
-1. Clone the repository
-
-2. Create virtual environment
-
-3. Install dependencies
+## System Workflow
