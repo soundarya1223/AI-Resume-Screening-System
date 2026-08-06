@@ -5,7 +5,7 @@ from models.parser import extract_text
 from models.cleaner import clean_text
 from models.skill_extractor import extract_skills
 from models.matcher import calculate_match
-
+from models.ai_matcher import calculate_similarity
 
 app = Flask(__name__)
 
@@ -73,11 +73,15 @@ def analyze():
         resume_skills,
         job_skills
     )
-
+    ai_score = calculate_similarity(
+    cleaned_text,
+    job_description
+    )
 
     return render_template(
         "result.html",
         score=result["score"],
+        ai_score=ai_score,
         matched=result["matched"],
         missing=result["missing"]
     )

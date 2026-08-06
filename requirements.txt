@@ -1,2 +1,4 @@
 Flask
 pypdf
+sentence-transformers
+scikit-learn
